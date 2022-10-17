@@ -23,7 +23,7 @@ test("Should be able to create a new order with thre itens", () => {
 });
 
 test("Should be able to create a new order with descount coupon", () => {
-  const order = new Order("886.634.854-68");
+  const order = new Order("886.634.854-68", new Date("2022-09-01T10:00:00"));
   order.addItem(new Item(1, "Guitarra", 1000), 1);
   order.addItem(new Item(2, "Amplificador", 5000), 1);
   order.addItem(new Item(3, "Cabo", 30), 3);
